@@ -4,6 +4,12 @@ import jakarta.persistence.*;
 
 @Entity
 @Table(name = "partecipazioni")
+
+@NamedQuery(
+        name = "Partecipazione.getDaConfermarePerEvento",
+        query = "SELECT p FROM Partecipazione p WHERE p.evento = :evento AND p.stato = :stato"
+)
+
 public class Partecipazione {
 
     @Id

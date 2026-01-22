@@ -9,6 +9,11 @@
         <class>emanueleCozz.entities.Location</class>
         <class>emanueleCozz.entities.Persona</class>
         <class>emanueleCozz.entities.Partecipazione</class>
+        <class>emanueleCozz.entities.Concerto</class>
+        <class>emanueleCozz.entities.PartitaDiCalcio</class>
+        <class>emanueleCozz.entities.GaraDiAtletica</class>
+        <class>emanueleCozz.entities.GenereConcerto</class>
+
 
         <properties>
             <!-- DB -->

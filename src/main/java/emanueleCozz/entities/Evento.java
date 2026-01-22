@@ -8,6 +8,11 @@ import java.util.List;
 
 @Entity
 @Table(name = "eventi")
+@Inheritance(strategy = InheritanceType.JOINED)
+@NamedQuery(
+        name = "Evento.getEventiSoldOut",
+        query = "SELECT e FROM Evento e WHERE SIZE(e.listaPartecipazioni) = e.numeroMassimoPartecipanti"
+)
 public class Evento {
 
     @Id
